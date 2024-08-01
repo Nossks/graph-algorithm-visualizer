@@ -1,0 +1,88 @@
+body {
+    font-family: Arial, sans-serif;
+    text-align: center;
+    margin: 0;
+    padding: 0;
+    background-color:chartreuse;
+    background-size: cover;
+}
+
+h1 {
+    margin-top: 20px;
+}
+
+label {
+    font-size: 16px;
+    margin-right: 10px;
+}
+
+select {
+    font-size: 16px;
+    padding: 5px;
+}
+
+#visuals {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 500px;
+    width: 70%;
+    margin: 20px auto;
+    border: 1px solid #ccc;
+    /* background: url("image.jpeg") no-repeat center center; */
+    background-size: cover;
+    background-color: black;
+    position: relative;
+    overflow: auto;
+    box-sizing: border-box;
+}
+
+.node {
+    width: 40px;
+    height: 40px;
+    background-color: #3498db;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    font-weight: bold;
+    position: absolute;
+    transition: background-color 0.5s;
+    z-index: 1;
+}
+
+.edge {
+    position: absolute;
+    background-color: #ccc;
+    height: 2px;
+    transform-origin: 0 0;
+    transition: background-color 0.5s;
+    z-index: 0;
+}
+
+button {
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    background-color: #3498db;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+    margin: 10px;
+}
+
+button:hover {
+    background-color: #2980b9;
+}
+
+button:disabled {
+    background-color: #95a5a6;
+    cursor: not-allowed;
+}
+
+#algo-select {
+    padding: 5px;
+    font-size: 16px;
+}
